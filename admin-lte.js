@@ -121,12 +121,11 @@ Template.AdminLTE.events({
 });
 
 function cssUrl () {
-  return Meteor.absoluteUrl('packages/tunifight_admin-lte/css/AdminLTE.min.css', _absoluteUrlOptions());
+  return '/packages/tunifight_admin-lte/css/AdminLTE.min.css';
 }
 
 function skinUrl (name) {
-  return Meteor.absoluteUrl(
-    'packages/tunifight_admin-lte/css/skins/skin-' + name + '.min.css', _absoluteUrlOptions());
+  return '/packages/tunifight_admin-lte/css/skins/skin-' + name + '.min.css';
 }
 
 function _absoluteUrlOptions() {

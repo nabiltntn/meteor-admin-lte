@@ -1,6 +1,6 @@
 Package.describe({
   name: 'tunifight:admin-lte',
-  version: '0.0.4',
+  version: '0.0.5',
   summary: 'AdminLTE dashboard theme',
   git: 'https://github.com/nabiltntn/meteor-admin-lte',
   documentation: 'README.md'
