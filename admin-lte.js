@@ -10,16 +10,19 @@ Template.AdminLTE.onCreated(function () {
   var skin = 'blue';
   var fixed = false;
   var sidebarMini = false;
+  self.includeWrapper = true;
 
   if (this.data) {
     skin = this.data.skin || skin;
     fixed = this.data.fixed || fixed;
     sidebarMini = this.data.sidebarMini || sidebarMini;
+    self.includeWrapper = this.data.includeWrapper || self.includeWrapper;
   }
 
   self.isReady = new ReactiveVar(false);
   self.style = waitOnCSS(cssUrl());
   self.skin = waitOnCSS(skinUrl(skin));
+  self.includeWrapper
 
   fixed && $('body').addClass('fixed');
   sidebarMini && $('body').addClass('sidebar-mini');
@@ -52,6 +55,10 @@ Template.AdminLTE.helpers({
 
   skin: function () {
     return this.skin || 'blue';
+  },
+  
+  includeWrapper: function () {
+    return this.includeWrapper ? 'wrapper' : '';
   }
 });
 

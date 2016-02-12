@@ -1,7 +1,7 @@
 AdminLTE dashboard theme
 ========================
 
-`meteor add mfactory:admin-lte`
+`meteor add tunifight:admin-lte`
 
 ## Usage ##
 
@@ -21,3 +21,5 @@ AdminLTE dashboard theme
 **fixed** - set to `true` to get fixed header and sidebar. Defaults to `false`.
 
 **sidebarMini** - set to `true` to make sidebar small when collapsed. Defaults to `false`.
+
+**includeWrapper** - set to `false` to not use the wrapper class for root div. Defaults to `true`.
